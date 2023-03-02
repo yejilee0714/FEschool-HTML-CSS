@@ -1,0 +1,34 @@
+section > * {
+    color : royalblue;    
+}
+
+section{
+    box-sizing: border-box;
+}
+
+strong{
+    color : red;
+}
+
+#hello {
+    font-size :20px;
+}
+
+.h1{
+    font-size: 50px;
+}
+
+[class="h1"] {
+    background-color: rosybrown;
+}
+
+[class ^="btn"] {
+    background-color: royalblue;
+}
+/*h1{
+    color: red;
+}
+p {
+    color:yellow; 
+    background-color:black;
+}*/

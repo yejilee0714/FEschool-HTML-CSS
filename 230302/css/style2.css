@@ -1,0 +1,23 @@
+section > p {
+    color: red;
+}
+
+section{
+    border: 5px solid pink;
+}
+
+section strong{
+    color: green;
+}
+
+section h2{
+    border: inherit; 
+} 
+
+h1 ~ p{
+    text-decoration:underline;
+} /*형제의 전속성을 선택할 수 없음*/
+
+h1 + p{
+    background: yellow;
+}

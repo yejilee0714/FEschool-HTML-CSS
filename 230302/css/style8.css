@@ -1,0 +1,33 @@
+
+div {	color: #19ce60;}
+
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+div > p {
+    font-family: 'Pretendard-Regular', Verdana, sans-serif;
+    border: 1px solid currentColor;
+}
+
+.hello{
+    font-family: 'Pretendard-Regular', Verdana, sans-serif; 
+}
+
+p{
+    text-transform: uppercase;
+}
+
+.dashed {
+    text-decoration: lime underline overline dashed 10px;
+}
+
+.wavy{
+    text-decoration-color: royalblue;
+    text-decoration-line: line-through underline overline;
+    text-decoration-style: wavy;
+    text-decoration-thickness:0.1px;
+}
