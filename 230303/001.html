@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>폰트적용</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Gugi&display=swap');
+
+        .black-han-sans{
+            font-family: 'Black Han Sans', sans-serif;
+            text-shadow: 10px 5px 0em royalblue;
+        }
+
+        .gugi{
+            font-family: 'Gugi', cursive;
+        }
+
+        @font-face {
+            font-family: "Pretendard-Regular";
+            src: url("font/Pretendard-Regular.woff") format("woff");
+            font-weight: 400;
+            font-style: normal;
+            }
+
+        @font-face {
+            font-family: "Pretendard-Bold";
+            src: url("font/Pretendard-Bold.woff") format("woff");
+            font-weight: 400;
+            font-style: normal;
+        }        
+
+        body{
+            font-family: Pretendard-Regular, "Times New Roman", Dotum, "돋움", sans-serif;
+        }
+
+        .pt-b{
+            font-family: Pretendard-Bold, "Times New Roman", Dotum, "돋움", sans-serif;
+            font-size: 1.2rem;
+            text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em yellow;
+            text-align: center;
+        }
+        
+        .lorem-align{
+            text-align: justify;
+            word-break: break-all;
+            word-spacing: 40px;
+        }
+
+        .lorem-line{
+            line-height: 10px;
+            letter-spacing: 20px;
+            text-indent: 2em;
+        }
+
+        .va{
+            font-size: 2rem;
+        }
+        
+        .va strong {
+            font-size: 0.5em;
+            vertical-align: bottom;
+        }
+
+        .box{
+            background: salmon;
+            width: 100px;
+            height: 100px;
+            line-height: 100px;
+            text-align: center;
+            color: #fff;
+        }
+
+    </style>
+</head>
+
+<body>
+    <p class="box">안녕</p>
+    <p>안녕하세요</p>
+    <p class="pt-b">안녕하세요</p>
+    <p class="lorem-align">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem iste consectetur culpa doloribus ratione harum, voluptate doloremque praesentium, aperiam soluta corporis repellat dolores quae laboriosam magni natus possimus, debitis itaque!</p>
+    <p class="lorem-line">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum id enim accusantium quos laboriosam. Vero ea, recusandae culpa, earum eligendi nisi amet quod totam aspernatur placeat possimus? Nesciunt, laboriosam consectetur.</p>
+    <p class="black-han-sans">안녕하세요</p>
+    <p style="font-family: 'Jalnan OTF';" >안녕하세요</p><!--다운 받은 폰트가 아니기 때문에 기본 폰트로 출력-->
+    <p class="gugi">안녕하세요</p>
+    <p class="va">안녕하세요<strong>반갑습니다.</strong></p>
+</body>
+</html>
