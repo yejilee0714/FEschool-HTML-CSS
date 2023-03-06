@@ -12,7 +12,7 @@ h2, p{
     display: block;
     width: 288px;
     background: #fff;
-    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0);
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     overflow: hidden;
 }

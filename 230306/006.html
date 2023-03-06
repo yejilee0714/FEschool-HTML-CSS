@@ -4,33 +4,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>card</title>
+    <title>card 실습</title>
     <style>
         .card1 {
+            position: absolute;
             width: 288px;
             height: 346px;
             margin: 46px 0px 0px 63px;
             border-radius: 8px;
             background-color: #fff;
-            box-shadow: 1px 1px 4px #C4c4c4;
+            box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
         }
-        .img1 {
-            border-radius: 8px 8px 0px 0px;
+        img[class^="img"] {
             position: absolute;
             width: 288px;
             height: 196px;
-            
         }
-        .title1{
+        .img1 {
+            border-radius: 8px 8px 0px 0px;
+        }
+        p[class^="title"]{
             position: absolute;
             width: 200px;
             height: 19px;
-            margin: 221px 0px 0px 16px;
-            padding-top: 1px;
+            
             font-size: 16px;
             font-weight: bold;
         }
-        .text1{
+        .title1{
+            margin: 221px 0px 0px 16px;
+            padding-top: 1px;
+        }
+        p[class^="text"]{
             position: absolute;
             overflow: hidden;
             display: -webkit-box;
@@ -43,8 +48,11 @@
             margin: 252px 16px 0px 16px;
             color: #5A6A72;
         }
+        .text1{
+            margin: 252px 16px 0px 16px;
+        }
 
-        .bnt1{
+        button[class^="bnt"]{
             position: absolute;
             width: 40px;
             height: 18px;
@@ -61,12 +69,38 @@
         }
 
         .card2 {
+            position: absolute;
             width: 288px;
-            height: 346px;
-            margin: 46px 0px 0px 63px;
+            height: 374px;
+            margin: 46px 0px 0px 378px;
             border-radius: 8px;
             background-color: #fff;
-            box-shadow: 1px 1px 4px #C4c4c4;
+            box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .title-box{
+            vertical-align: top;
+            margin: 0px;
+            height: 68px;
+        }
+
+        .title-img {
+            position: absolute;
+            vertical-align: top;
+            width: 39.64px;
+            height: 59px;
+            margin: 8px 0px 0px 16.02px;
+
+        }
+
+        .title2{
+            margin: 19px 0px 0px 72px;
+        }
+        /* .img2{
+        } */
+
+        .text2{
+            margin-top: 10px;
         }
     </style>
 </head>
@@ -79,10 +113,18 @@
     </div>
 
     <div class="card2">
-        <img src="img/d422c057d708a68d/thumbnail.png" alt="">
-        <p class="title">그것을 피가 청춘을 것이다</p>
-        <p class="text">이것이야말로 모래뿐일 아니더면, 소담스러운 보라. 착목한는 우리 위하여, 하였으며, 일월과 얼마나 있다. 용기가 과실이 소리다.이것은 인간의 남는 가슴에 광야에서 할지라도 그리하였는가? 피어나는 그들을 산야에 따뜻한 같이, 커다란 교향악이다. 끝에 예수는 살았으며, 굳세게 든 얼마나 밝은 교향악이다. 봄날의 시들어 이는 오직 곳으로 칼이다. 일월과 꽃 사는가 방지하는 이상이 황금시대다. 인간의 무한한 설레는 구하지 무엇을 무엇이 그들에게 이것이다. 꽃 우리 착목한는 목숨을 끓는다. 인도하겠다는 원질이 창공에 이성은 할지니, 같지 보는 않는 있는가? 영락과 용기가 같이, 옷을 같이 아니더면, 천고에 같지 황금시대다.</p>
-        <button type="button" class="bnt">Read</button>
+        <section class="title-box">
+            <img class="title-img" src="img/weniv-chilli.png" alt="">
+            <p class="title2">그것을 피가 청춘을 것이다</p>
+        </section class="img-box">
+        <img class="img2" src="img/d422c057d708a68d/thumbnail.png" alt="">
+        <section class="text-box">
+            <p class="text2">이것이야말로 모래뿐일 아니더면, 소담스러운 보라. 착목한는 우리 위하여, 하였으며, 일월과 얼마나 있다. 용기가 과실이 소리다.이것은 인간의 남는 가슴에 광야에서 할지라도 그리하였는가? 피어나는 그들을 산야에 따뜻한 같이, 커다란 교향악이다. 끝에 예수는 살았으며, 굳세게 든 얼마나 밝은 교향악이다. 봄날의 시들어 이는 오직 곳으로 칼이다. 일월과 꽃 사는가 방지하는 이상이 황금시대다. 인간의 무한한 설레는 구하지 무엇을 무엇이 그들에게 이것이다. 꽃 우리 착목한는 목숨을 끓는다. 인도하겠다는 원질이 창공에 이성은 할지니, 같지 보는 않는 있는가? 영락과 용기가 같이, 옷을 같이 아니더면, 천고에 같지 황금시대다.</p>
+            <button type="button" class="bnt">Read</button>
+            <button type="button" class="but2"><img src="img/d422c057d708a68d/icon-heart.png" alt=""></button>
+            <button type="button" class="bnt3"><img src="img/d422c057d708a68d/icon-share.png" alt=""></button>
+            <button type="button" class="but4"><img src="img/d422c057d708a68d/icon-more.png" alt=""></button>
+        </section>
     </div>
 </body>
 </html>
