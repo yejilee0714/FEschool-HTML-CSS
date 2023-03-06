@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko-KR">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,49 +16,38 @@
             background-color: #fff;
             box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
         }
+
+        /*공통*/
         img[class^="img"] {
             position: absolute;
             width: 288px;
             height: 196px;
         }
-        .img1 {
-            border-radius: 8px 8px 0px 0px;
-        }
-        p[class^="title"]{
+
+        p[class^="title"] {
             position: absolute;
             width: 200px;
             height: 19px;
-            
             font-size: 16px;
             font-weight: bold;
         }
-        .title1{
-            margin: 221px 0px 0px 16px;
-            padding-top: 1px;
-        }
-        p[class^="text"]{
+
+        p[class^="text"] {
             position: absolute;
             overflow: hidden;
             display: -webkit-box;
             -webkit-box-orient: vertical;
             -webkit-line-clamp: 2;
-            width: 256px;  
-            height: 40px;
+            width: 256px;
             font-size: 12px;
             line-height: 20px;
-            margin: 252px 16px 0px 16px;
             color: #5A6A72;
         }
-        .text1{
-            margin: 252px 16px 0px 16px;
-        }
 
-        button[class^="bnt"]{
+        button[class^="bnt"] {
             position: absolute;
             width: 40px;
-            height: 18px;
             size: 14px;
-            margin: 311px 0px 0px 22px;
             padding: 0px;
             text-align: center;
             background: #fff;
@@ -66,6 +56,26 @@
             font-weight: 700;
             line-height: 16.8px;
             text-decoration-line: underline;
+        }
+
+        /*card1*/
+        .img1 {
+            border-radius: 8px 8px 0px 0px;
+        }
+
+        .title1 {
+            margin: 221px 0px 0px 16px;
+            padding-top: 1px;
+        }
+
+        .text1 {
+            margin: 252px 16px 0px 16px;
+            height: 40px;
+        }
+
+        .bnt1 {
+            height: 18px;
+            margin: 311px 0px 0px 22px;
         }
 
         .card2 {
@@ -78,7 +88,8 @@
             box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
         }
 
-        .title-box{
+        /*card2*/
+        .title-box {
             vertical-align: top;
             margin: 0px;
             height: 68px;
@@ -93,38 +104,104 @@
 
         }
 
-        .title2{
-            margin: 19px 0px 0px 72px;
+        .title2 {
+            margin: 19px 0px 1px 72px;
         }
-        /* .img2{
-        } */
 
-        .text2{
-            margin-top: 10px;
+        .t-text {
+            position: absolute;
+            margin: 39px 0px 0px 72px;
+            font-size: 12px;
+            width: 200px;
+            height: 14px;
+            color: #5A6A72;
         }
+
+        .text-box {
+            margin-top: 197px;
+        }
+
+        .text2 {
+            margin: 10px 0px 0px 16px;
+        }
+
+        img[class^="bnt-img"] {
+            position: absolute;
+            vertical-align: top;
+            /* margin: 69px 0px 0px 22px; */
+            width: 22px;
+            height: 19;
+
+        }
+
+        .bnt2-1 {
+            margin: 69px 0px 0px 22px;
+            width: 22px;
+            height: 19px;
+        }
+
+        .bnt-img1{
+            margin: 69px 0px 0px 165px;
+        }
+
+        .bnt-img2{
+            margin: 69px 0px 0px 207px;
+        }
+        .bnt-img3{
+            margin: 69px 0px 0px 248px;
+        }
+
+        /* 이미지 버튼은 추후 개선
+        div[class^="bnt2"] {
+            margin: 69px 0px 0px 22px;
+        }
+
+        .bnt2-2 .bnt2-3 .btn2-4 {}
+
+        .bnt2-2 {
+            margin-left: 165px;
+        }
+
+        .bnt2-2{
+            margin-right: 81px;
+        } */
     </style>
 </head>
+
 <body>
     <div class="card1">
         <img class="img1" src="img/d422c057d708a68d/thumbnail.png" alt="">
         <p class="title1">그것을 피가 청춘을 것이다</p>
-        <p class="text1">이것이야말로 모래뿐일 아니더면, 소담스러운 보라. 착목한는 우리 위하여, 하였으며, 일월과 얼마나 있다. 용기가 과실이 소리다.이것은 인간의 남는 가슴에 광야에서 할지라도 그리하였는가? 피어나는 그들을 산야에 따뜻한 같이, 커다란 교향악이다. 끝에 예수는 살았으며, 굳세게 든 얼마나 밝은 교향악이다. 봄날의 시들어 이는 오직 곳으로 칼이다. 일월과 꽃 사는가 방지하는 이상이 황금시대다. 인간의 무한한 설레는 구하지 무엇을 무엇이 그들에게 이것이다. 꽃 우리 착목한는 목숨을 끓는다. 인도하겠다는 원질이 창공에 이성은 할지니, 같지 보는 않는 있는가? 영락과 용기가 같이, 옷을 같이 아니더면, 천고에 같지 황금시대다.</p>
-        <button type="button1" class="bnt">Read</button>
+        <p class="text1">이것이야말로 모래뿐일 아니더면, 소담스러운 보라. 착목한는 우리 위하여, 하였으며, 일월과 얼마나 있다. 용기가 과실이 소리다.이것은 인간의 남는 가슴에 광야에서 할지라도
+            그리하였는가? 피어나는 그들을 산야에 따뜻한 같이, 커다란 교향악이다. 끝에 예수는 살았으며, 굳세게 든 얼마나 밝은 교향악이다. 봄날의 시들어 이는 오직 곳으로 칼이다. 일월과 꽃 사는가
+            방지하는 이상이 황금시대다. 인간의 무한한 설레는 구하지 무엇을 무엇이 그들에게 이것이다. 꽃 우리 착목한는 목숨을 끓는다. 인도하겠다는 원질이 창공에 이성은 할지니, 같지 보는 않는 있는가?
+            영락과 용기가 같이, 옷을 같이 아니더면, 천고에 같지 황금시대다.</p>
+        <button type="button1" class="bnt1">Read</button>
     </div>
 
     <div class="card2">
         <section class="title-box">
-            <img class="title-img" src="img/weniv-chilli.png" alt="">
-            <p class="title2">그것을 피가 청춘을 것이다</p>
-        </section class="img-box">
+            <section>
+                <img class="title-img" src="img/weniv-chilli.png" alt="">
+            </section>
+            <section>
+                <p class="title2">그것을 피가 청춘을 것이다</p>
+                <p class="t-text">secondary</p>
+            </section>
+        </section>
         <img class="img2" src="img/d422c057d708a68d/thumbnail.png" alt="">
         <section class="text-box">
-            <p class="text2">이것이야말로 모래뿐일 아니더면, 소담스러운 보라. 착목한는 우리 위하여, 하였으며, 일월과 얼마나 있다. 용기가 과실이 소리다.이것은 인간의 남는 가슴에 광야에서 할지라도 그리하였는가? 피어나는 그들을 산야에 따뜻한 같이, 커다란 교향악이다. 끝에 예수는 살았으며, 굳세게 든 얼마나 밝은 교향악이다. 봄날의 시들어 이는 오직 곳으로 칼이다. 일월과 꽃 사는가 방지하는 이상이 황금시대다. 인간의 무한한 설레는 구하지 무엇을 무엇이 그들에게 이것이다. 꽃 우리 착목한는 목숨을 끓는다. 인도하겠다는 원질이 창공에 이성은 할지니, 같지 보는 않는 있는가? 영락과 용기가 같이, 옷을 같이 아니더면, 천고에 같지 황금시대다.</p>
-            <button type="button" class="bnt">Read</button>
-            <button type="button" class="but2"><img src="img/d422c057d708a68d/icon-heart.png" alt=""></button>
-            <button type="button" class="bnt3"><img src="img/d422c057d708a68d/icon-share.png" alt=""></button>
-            <button type="button" class="but4"><img src="img/d422c057d708a68d/icon-more.png" alt=""></button>
+            <p class="text2">이것이야말로 모래뿐일 아니더면, 소담스러운 보라. 착목한는 우리 위하여, 하였으며, 일월과 얼마나 있다. 용기가 과실이 소리다.이것은 인간의 남는 가슴에 광야에서
+                할지라도 그리하였는가? 피어나는 그들을 산야에 따뜻한 같이, 커다란 교향악이다. 끝에 예수는 살았으며, 굳세게 든 얼마나 밝은 교향악이다. 봄날의 시들어 이는 오직 곳으로 칼이다. 일월과
+                꽃 사는가 방지하는 이상이 황금시대다. 인간의 무한한 설레는 구하지 무엇을 무엇이 그들에게 이것이다. 꽃 우리 착목한는 목숨을 끓는다. 인도하겠다는 원질이 창공에 이성은 할지니, 같지
+                보는 않는 있는가? 영락과 용기가 같이, 옷을 같이 아니더면, 천고에 같지 황금시대다.</p>
+            <button type="button" class="bnt2-1">Read</button>
+            <img class="bnt-img1" src="img/d422c057d708a68d/icon-heart.png" alt="">
+            <img class="bnt-img2" src="img/d422c057d708a68d/icon-share.png" alt="">
+            <img class="bnt-img3" src="img/d422c057d708a68d/icon-more.png" alt="">
+
         </section>
     </div>
 </body>
+
 </html>
