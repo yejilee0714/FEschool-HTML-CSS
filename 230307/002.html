@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>layout-float</title>
+    <style>
+        .wrap{
+            background: rgb(99, 99, 255);
+            padding: 10px;
+            width: 400px;
+        }
+        .box1{
+            color: white;
+            background: skyblue;
+            float: none;
+            width: 400px;
+            height: 100px;
+        }
+        
+        .box2{
+            color: white;
+            background: navy;
+            margin: 10px 0px;
+            float: left;
+            width: 70%;
+            height: 200px;
+        }
+
+        .box3{
+            background: rgb(212, 255, 95);
+            margin: 10px 0px; 
+            width: 30%;
+            float: left;
+            height: 200px;
+        }
+
+        .box4{
+            color: white;
+            background: salmon;
+            clear: both;
+            width: 400px;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="box1">header</div>
+        <div class="box2">section</div>
+        <div class="box3">aside</div>
+        <div class="box4">footer</div>
+    </div>
+</body>
+</html>
