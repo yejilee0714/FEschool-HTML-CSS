@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid-box(grid-template-area)</title>
+    <style>
+        .container{
+            display: grid;
+            width: 400px;
+            height: 400px;
+            grid-template-columns: 2fr 1fr 2fr;
+            grid-template-rows:2fr 1fr 2fr;
+            grid-template-areas: 
+            "grid-a grid-a grid-b" 
+            "grid-c grid-d grid-b" 
+            "grid-e grid-f grid-f";
+            gap: 10px;
+        }
+        .item:first-child{
+            grid-area: grid-a;
+            background: royalblue;
+        }
+        .item:nth-child(2){
+            grid-area: grid-b;
+            background: gold;
+        }
+        .item:nth-child(3){
+            grid-area: grid-c;
+            background: slateblue;
+        }
+        .item:nth-child(4){
+            grid-area: grid-d;
+            background: sandybrown;
+        }
+        .item:nth-child(5){
+            grid-area: grid-e;
+            background: salmon;
+        }
+        .item:last-child{
+            grid-area: grid-f;
+            background: seagreen;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+    </div>
+</body>
+</html>
