@@ -8,6 +8,7 @@
     <title>calc 함수</title>
     <style>
         :root{
+            --main-color: white;
             --max: 100;
             --max-width: 1000px;
             --plane-padding: 30px;
@@ -19,6 +20,7 @@
         }
 
         body{
+            color: var(--main-color, purple);
             font-size: clamp(20px, 2vw, 60px);
             /* font-size: clamp(14px, 40 / var(--max) * 10vw, 40px); */
         }
