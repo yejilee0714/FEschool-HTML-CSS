@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>button 만들기</title>
+    <style>
+        button{
+            width: 88px;
+            height: 32px;
+            background: #343F50;
+            border: 1px solid #1A202C;
+            margin: 10px auto;
+            padding: 9px 25px;
+            color: #CBD5DF;
+            font-weight: bold;
+            box-shadow: 1px 1px 0px 0px #888888 inset;
+        }
+        .btn:hover{
+            text-decoration: underline;
+            color: #fff;
+        }
+        .btn:active{
+            text-decoration: underline;
+            color:#fff;
+            box-shadow: 1px 1px 0px 0px #262F3E inset;
+        }
+        .btn:disabled{
+            color:#4A5568;
+        }
+        .yes{
+            color: #439AFF;
+        }
+        .yes:hover{
+            text-decoration: underline;
+            color: #fff;
+            background: #439AFF;
+            border: 1px solid #439AFF;
+            box-shadow: 1px 1px 0px 0px #73B4FF inset;
+        }
+        .yes:active{
+            text-decoration: underline;
+            color:#fff;
+            background: #439AFF;
+            border: 1px solid #439AFF;
+            box-shadow: 1px 1px 0px 0px #3B78BE inset;
+        }
+        .del{
+            color: #EB5757;
+        }
+        .del:hover{
+            text-decoration: underline;
+            color: #fff;
+            background: #EB5757;
+            border: 1px solid #EB5757;
+            box-shadow: 1px 1px 0px 0px #FD6F6F inset;
+        }
+        .del:active{
+            text-decoration: underline;
+            color:#fff;
+            background: #EB5757;
+            border: 1px solid #EB5757;
+            box-shadow: 1px 1px 0px 0px #D94242 inset;
+        }
+    </style>
+</head>
+<body>
+    <button type="button" class="btn">Button</button>
+    <button type="button" class="btn" disabled>Button</button>
+    <button type="button" class="yes">Yes</button>
+    <button type="button" class="del">Del</button>
+</body>
+</html>
