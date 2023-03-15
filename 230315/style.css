@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    margin: 240px auto;
+    justify-content: center;
+}
+
+.text {
+    width: 612px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    margin-right: 102px;
+}
+
+.image {
+    width: 480px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    font-size: 60px;
+    /* font : 70px */
+    width: 612px;
+    height: 264px;
+}
+
+.sub {
+    font-size: 20px;
+    margin-top: 25px;
+}
+
+.video,
+.book {
+    width: 406px;
+    height: 280px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    color: white;
+    padding: 40px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.video {
+    background: url(./img/Rectangle\ 2.png);
+    vertical-align: top;
+}
+
+.book {
+    background: url(./img/Rectangle\ 3.png);
+    vertical-align: top;
+}
+
+[class^="go"] {
+    display: flex;
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    margin: 130px auto auto 300px;
+}
+
+@media(max-width: 390px) {
+    .container {
+        display: flex;
+        margin: 100px auto;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .text {
+        width: 315px;
+        height: 200px;
+        margin: auto 16px;
+    }
+
+    .image {
+        margin: 40px 16px;
+        width: 340px;
+        height: 360px;
+    }
+
+    .title {
+        font-size: 29px;
+        width: 315px;
+        height: 135px
+    }
+    .sub{
+        font-size: 14px;
+    }
+
+    .video,
+    .book {
+        width: 246px;
+        height: 115px;
+        padding:30px;
+        font-size: 20px;
+    }
+    [class^="go"] {
+        font-size: 14px;
+        margin: 70px auto auto 170px;
+    }
+}
+
+
+@media(min-width: 391px) and (max-width:768px){
+    .container {
+        display: flex;
+        margin: 100px auto;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .text {
+        width: 612px;
+        height: 350px;
+        margin: auto 30px;
+    }
+
+    .image {
+        margin: 40px 30px;
+        width: 100%;
+        flex-direction: row;
+    }
+
+    .title {
+        font-size: 63px;
+        width: 612px;
+        height: 264px;
+    }
+    .sub{
+        font-size: 18px;
+    }
+
+    .video,
+    .book {
+        width: 284px;
+        height: 138px;
+        padding:30px;
+        font-size: 24px;
+    }
+    .book{
+        margin-left: 20px;
+    }
+    [class^="go"] {
+        font-size: 16px;
+        margin: 98px auto auto 200px;
+    }
+}
