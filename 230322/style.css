@@ -1,0 +1,165 @@
+.ally-hidden {
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(50%);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+}
+
+h1,h2,h3,h4,h5,h6,a,span,ul,li,button{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    color: none;
+    text-decoration: none;
+}
+
+button{
+    border: none;
+    background: none;
+}
+
+ul, li{
+    list-style: none;
+}
+
+.wrapper{
+    width: 520px;
+    margin:auto;
+    box-shadow: inset 0px 0px 5px red;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;   
+    border-bottom: 1px solid #C4C4C4;
+}
+
+h1{
+    font-size: 16px;
+    margin: 20px 0px 18px 188px;
+}
+
+.close img{
+    width: 16px;
+    padding: 0 24px;
+}
+
+.login_page{
+    margin: 26px 24px 36px;
+}
+
+h2{
+    font-size: 20px;
+    margin-bottom: 24px;
+}
+
+.login_id, .login_pw{
+    width: 93%;
+    padding: 15px;
+    font-size: 16px;
+}
+
+.login_id{
+    margin-bottom: 34px;
+}
+
+.login_pw{
+    margin-bottom: 14px;
+}
+
+.txt-hide {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+}
+
+.labl-hold{
+    position: relative;
+    display: inline-block;
+    margin-top: 20px 0;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.labl-hold::before{
+    content: '';
+        display: inline-block;
+        border-radius: 50px;
+        width: 22px;
+        height: 22px;
+        margin-right: 10px;
+        vertical-align: -5px;
+        border: 1px solid black;
+}
+
+.inp-hold:checked+.labl-hold::before{
+    content: '✔';
+    text-align: center;
+    background: #2F80ED;
+    vertical-align: 0.5px;
+    color: #fff;
+}
+
+.login_btn{
+    width: 100%;
+    padding: 15px;
+    font-size: 16px;
+    color: #fff;
+    margin-top: 21px;
+    background: #2F80ED;
+    border-radius: 5px;
+}
+
+.login_plus{
+    text-align: center;
+    margin: 20px auto;
+}
+
+.login_plus a{
+    color: #767676;
+}
+
+.login_find::before{
+    content: '|';
+    margin: auto 10px;
+    vertical-align: 2px;
+}
+
+.or{
+    color: #767676;
+}
+
+.or::before{
+    content: '';
+    width: 210px;
+    height: 1px;
+    background-color: #C4C4C4;
+}
+
+.or::after{
+    content: '';
+    width: 210px;
+    height: 2px;
+    background-color: #C4C4C4;
+}
+
+.login_page_easy{
+    margin: 29px 24px 25px;
+}
+
+.login_page_easy li{
+    text-align: center;
+    padding: 15px;
+    margin-bottom: 10px;
+    border: 1px solid #767676;
+    border-radius: 5px;
+}
