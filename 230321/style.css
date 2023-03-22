@@ -1,0 +1,134 @@
+/* reset */
+body, h1, a, p, button, ul, li{
+    margin: 0;
+    padding: 0;
+}
+
+img{
+    vertical-align: top;
+}
+
+.ally-hidden {
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(50%);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+ul, li{
+    list-style: none;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    margin: auto 251px;
+}
+
+h1{
+    margin-right: 191.73px;
+}
+
+nav, nav ul{
+    display: flex;
+}
+
+ul{
+    gap: 81px;
+    margin-right: 111.4px;
+}
+
+#search{
+    border: 4px solid #eee;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+.notice{
+    width: 728px;
+    color: #29363d;
+    position: relative;
+}
+
+.notice-title{
+    font-size: 30px;
+}
+
+.notice-list{
+    margin-top: 20px;
+    border-top: 1px solid #eee;
+}
+
+.notice-list li {
+    border-bottom: 1px solid #eee;
+}
+
+.notice-list li p{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.notice-list li a {
+    padding: 0 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 56px;
+}
+
+.notice-list li a strong{
+    color: #2e6ff2;
+    margin-right: 16px;
+}
+
+.more{
+    position: absolute;
+    top: 0;
+    right: 0;;
+}
+
+/* .notice{
+    margin: 103px 40px auto 252px;
+    width: 728px;
+}
+
+.notice strong{
+    margin-right: 16px;
+    color: blue;
+}
+
+.notice li{
+    display: flex;
+    padding: 20px 0px;
+    line-height: 20px;
+    border-top: 1px solid #EEEEEE;
+}
+
+.notice li span{
+    display: block;
+    width: 571px;
+    height: 20px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.notice li:last-of-type{
+    border-bottom: 1px solid #EEEEEE;
+}
+
+time{
+    margin-left: 41px;
+} */
