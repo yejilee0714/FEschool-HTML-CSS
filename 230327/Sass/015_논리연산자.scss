@@ -1,0 +1,40 @@
+@debug not true;
+@debug not false;
+// true: 1
+// false: 0
+// or: 더하기
+// and: 곱
+@debug true and false; 
+// 둘 중 하나라도 false라면 false 1*0=0
+// 두 조건이 모두 충족되는 경우 사용 - and
+
+$value: 32px;
+$color: black;
+
+p {
+    @if ($value >=32px and $color == red) {
+        letter-spacing: 1rem;
+    }
+
+    @else {
+        letter-spacing: 0.5rem;
+    }
+}
+
+@debug true or false; 
+// 둘 중 하나라도 true라면 true 1+0=1 1+1=2
+// 0 이외의 모든 숫자는 true -1도 true
+// 어떤 조건이든 하나라도 true를 만족한다면 사용 - true
+
+$value: 32px;
+$color: black;
+
+.test {
+    @if ($value >=32px or $color == red) {
+        letter-spacing: 1rem;
+    }
+
+    @else {
+        letter-spacing: 0.5rem;
+    }
+}

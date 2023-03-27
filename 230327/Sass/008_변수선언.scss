@@ -1,0 +1,52 @@
+// 색상
+$yeji1: #000;
+$yeji2: #fff;
+// 한글 변수를 권장하지 않음.
+// 고유명사 같은 경우는 한글 변수를 사용할 수 있다.
+$예지: #f00;
+$큰글자: 34px;
+
+.one{
+    font-size: $큰글자;
+    color: $yeji2;
+}
+
+.two{
+    background-color: $yeji2;
+    color: $yeji1;
+}
+
+.three{
+    color: $예지;
+}
+
+//색상
+// $red: #ee4444;
+// $black: #222;
+// $bg-color: #3e5e9e;
+// $link-color : $red;
+// $p-color : #282A36;
+
+//폰트사이즈
+// $font-p : 13px;
+// $font-h1 : 28px;
+
+//폰트
+// $base-font : 'Noto Sans KR',
+// sans-serif;
+
+// body {
+//     background-color: $bg-color;
+//     font-size: $font-p;
+//     font-family: $base-font;
+// }
+
+// h1 {
+//     font-size: $font-h1;
+//     color: $black;
+// }
+
+// p {
+//     font-size: $font-p;
+//     color: $black;
+// }

@@ -1,0 +1,16 @@
+$value: blue;
+// global 사용 시 전역변수가 적용되지 않음
+
+.one {
+    // 사용하지 않기를 권장함
+    $value: red !global;
+    color: $value;
+
+    .three {
+        background-color: $value;
+    }
+}
+
+.two{
+    color: $value;
+}

@@ -1,0 +1,13 @@
+@charset "UTF-8";
+/*.card와 .aside 클래스 선택자의 적용한 스타일이 겹침*/
+.card {
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+}
+
+.profile {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+}/*# sourceMappingURL=016_믹스인_1.css.map */

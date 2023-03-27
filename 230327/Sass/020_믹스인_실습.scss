@@ -1,0 +1,64 @@
+@mixin box($width, $height, $radius){
+    width: $width;
+    height: $height;
+    border-radius: $radius;
+}
+
+@mixin display_flex($value){
+    display: flex;
+
+    @if ($value == 'center'){
+        justify-content: center;
+        align-items: center;
+    }
+
+    @if ($value == 'right'){
+        justify-content: right;
+        align-items: right;
+    }
+}
+
+.card {
+    @include display_flex(center)
+}
+
+.card-item {
+    @include box(100px, 100px, 10%)
+}
+
+.product {
+    @include display_flex(right)
+}
+
+.product-item {
+    @include box(200px, 200px, 20%)
+}
+
+// 추천 코드 -해답
+// @mixin flex($direction){
+//     display: flex;
+//     justify-content: $direction;
+//     align-items: $direction;
+// }
+
+// @mixin item($length , $redius){
+//     width: $length;
+//     height: $length;
+//     border-radius: $redius;
+// }
+
+// .card {
+//     @include flex(center);
+// }
+
+// .card-item {
+//     @include item(100px, 10%)
+// }
+
+// .product {
+//     @include flex(right);
+// }
+
+// .product-item {
+//     @include item(200px, 20%)
+// }
