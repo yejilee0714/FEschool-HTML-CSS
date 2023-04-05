@@ -15,7 +15,7 @@ h1,h2,h3,h4,h5,h6,a,span,ul,li,button{
 }
 
 a{
-    color: none;
+    color: initial;
     text-decoration: none;
 }
 
@@ -31,7 +31,6 @@ ul, li{
 .wrapper{
     width: 520px;
     margin:auto;
-    box-shadow: inset 0px 0px 5px red;
 }
 
 header{
@@ -82,31 +81,34 @@ h2{
     overflow: hidden;
 }
 
-.labl-hold{
-    position: relative;
+.labl-hold {
     display: inline-block;
-    margin-top: 20px 0;
+    height: 22px;
+    margin: 17px 0 21px;
+    font-weight: 500;
     font-size: 16px;
+    line-height: 20px;
+    color: #767676;
     cursor: pointer;
 }
 
 .labl-hold::before{
-    content: '';
-        display: inline-block;
-        border-radius: 50px;
-        width: 22px;
-        height: 22px;
-        margin-right: 10px;
-        vertical-align: -5px;
-        border: 1px solid black;
+    display: inline-block;
+    content: "";
+    width: 22px;
+    height: 22px;
+    margin-right: 8px;
+    vertical-align: -5px;
+    background: url(images/css_sprites.png) -34px -35px/ 60px 30px;
 }
 
-.inp-hold:checked+.labl-hold::before{
-    content: '✔';
-    text-align: center;
-    background: #2F80ED;
-    vertical-align: 0.5px;
-    color: #fff;
+.inp-hold:focus-visible+.labl-hold::before {
+    outline: 2px solid #000;
+    outline-offset: 5px;
+}
+
+.inp-hold:checked+.labl-hold::before {
+    background: url(images/css_sprites.png) -64px -35px/ 60px 30px;
 }
 
 .login_btn{
@@ -134,21 +136,33 @@ h2{
     vertical-align: 2px;
 }
 
-.or{
-    color: #767676;
+.login_page_easy{
+    position: relative;
 }
 
-.or::before{
-    content: '';
-    width: 210px;
+.login_page_easy::before {
+    content: "또는";
+    display: block;
+    width: 52px;
+    height: 18px;
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #fff;
+    text-align: center;
+    z-index: 10;
+}
+
+.login_page_easy::after {
+    content: "";
+    display: block;
+    width: calc(100% - 48px);
+    position: absolute;
+    top: -20px;
+    left: 20px;
     height: 1px;
-    background-color: #C4C4C4;
-}
-
-.or::after{
-    content: '';
-    width: 210px;
-    height: 2px;
+    margin-top: -1px;
     background-color: #C4C4C4;
 }
 
@@ -159,7 +173,60 @@ h2{
 .login_page_easy li{
     text-align: center;
     padding: 15px;
-    margin-bottom: 10px;
+}
+
+.login_page_easy li:first-of-type{
+    margin-top: 40px;
+}
+
+.link-sns-login {
+    display: block;
+    padding: 13px 14px;
     border: 1px solid #767676;
     border-radius: 5px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #767676;
+}
+
+[class^="icon"]::before {
+    position: absolute;
+    display: block;
+    content: "";
+    width: 22px;
+    height: 22px;
+    background-image: url(images/css_sprites_icon.png);
+    background-size: 75px 75px;
+    background-position: -10px -10px;
+}
+
+.link-sns-login.icon-facebook {
+    border: 1px solid #2D9CDB;
+}
+
+.link-sns-login.icon-naver {
+    border: 1px solid #00BF18;
+}
+
+.link-sns-login.icon-kakao {
+    border: 1px solid #F2C94C;
+}
+
+.icon-google::before {
+    /* background: url("images/css_sprites_icon.png"); */
+    background-position: -45px -7px;
+}
+
+.icon-facebook::before {
+    background-position: -10px -7px;
+}
+
+.icon-naver::before {
+    background-position: -45px 30px;
+}
+
+.icon-kakao::before {
+    background-position: -10px 30px;
 }
